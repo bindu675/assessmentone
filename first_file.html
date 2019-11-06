@@ -1,0 +1,72 @@
+		<!DOCTYPE html>
+			<html>
+			<head>
+			<title></title>
+			<link rel="stylesheet" type="text/css" href="./css/file.css">
+			</head>
+			<body>
+			<nav class="nav">
+						<i class='fab fa-facebook-f'></i>
+					  <i class='fab fa-invision'></i>
+					  <i class='fab fa-instagram'></i>
+					  <a class="home1" href="home">Home</a>
+					  <a class="about1" href="about">About</a>
+					  <a class="team1" href="team">Team</a>
+					  <a class="event1" href="event">Event</a>
+					  <a class="signup1" href="first_file.html">Sign up</a>
+					  <a class="login1" href="first_file.html">Log in</a>
+					  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+			</nav><br><br>
+			<img class="img1" src="images/img1.jpeg">
+				<h1 id=header2>
+				We are the best<br> Consulting Agency
+			</h1>
+			<h5 class="header3">Lorem ipsum door sit amet adispiring elit Preferendis<br>
+				modi explicable Aperiam velit facilis official</h5>
+			<button class="button1">Get Started</button>
+			<div class="images">	
+				<div class="mySlides"><img src="images/img2.jpeg" height="500" width="700"></div>
+				<div class="mySlides"><img src="images/img3.jpg" height="500" width="700"></div>
+				<div class="mySlides"><img src="images/img4.jpeg" height="500" width="700"></div>
+			</div>
+			<div class="container">
+				<h6 class="header4">CREATIVE SKILLS</h6>
+				<h2>Create Your Own Web<br>Masterpiece</h2>
+				<p>Business is the activity of making one's living or making<br> money by producing or buying and selling products such<br> as goods and services. ... Having a business name does not separate<br><span id="dots">...</span><span id="more"> the business entity from the owner, which<br> means that the owner of the business.Having<br> a  the creditors can go after the owner's<br> personal possessions. A business structure does not<br> allow for corporate tax rates. The proprietor<br> is personally taxed on all income<br> from the business.</span> </p>
+				<button onclick="myFunction()" id="myBtn">Read more</button>
+			</div><br><br><br><br>
+			</div>
+		<script>
+				var slideIndex = 0;
+				carousel();
+
+				function carousel() {
+				  var i;
+				  var x = document.getElementsByClassName("mySlides");
+				  for (i = 0; i < x.length; i++) {
+				    x[i].style.display = "none"; 
+				  }
+				  slideIndex++;
+				  if (slideIndex > x.length) {slideIndex = 1} 
+				  x[slideIndex-1].style.display = "block"; 
+				  setTimeout(carousel, 2000); 
+				}
+				function myFunction() {
+		  var dots = document.getElementById("dots");
+		  var moreText = document.getElementById("more");
+		  var btnText = document.getElementById("myBtn");
+
+		  if (dots.style.display === "none") {
+		    dots.style.display = "inline";
+		    btnText.innerHTML = "Read more"; 
+		    moreText.style.display = "none";
+		   } else {
+		    dots.style.display = "none";
+		    moreText.style.display = "inline";
+		   }
+		  }
+		</script>
+			
+
+		</body>
+		</html>
